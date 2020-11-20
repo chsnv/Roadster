@@ -67,11 +67,12 @@ body {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url(assets/img/hero-mobile.jpg) center/cover no-repeat
+    background: url(../img/hero-mobile.jpg) center/cover no-repeat;
+    background-image: url();
 }
 
 .navbar-light .navbar-brand {
-    background: url(assets/img/logo.svg) center/85% no-repeat;
+    background: url(../img/logo.svg) center/85% no-repeat;
     width: 5.425rem
 }
 
@@ -222,7 +223,7 @@ th {
 
 @media (min-width:768px) {
     #hero {
-        background: url(assets/img/hero.jpg?) center/cover no-repeat
+        background: url(../img/hero-mobile.jpg) center/cover no-repeat
     }
 
     .table-row {
