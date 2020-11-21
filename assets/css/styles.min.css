@@ -174,12 +174,22 @@ th {
         font-size: 1rem
     }
 }
-#vertical-line {
-    width: 1px;
-    height: 195px;
-    background: rgba(255, 255, 255, .37);
-    margin: 2rem auto
+#last-video-text {
+    font-size: .8rem;    
 }
+
+@media (min-width:768px) {
+    #last-video-text {
+        font-size: .925rem;    
+    }
+    #vertical-line {
+        width: 1px;
+        height: 195px;
+        background: rgba(255, 255, 255, .37);
+        margin: 1rem auto
+    }
+}
+
 
 #video-content-lastone {
     margin-top: 6rem
