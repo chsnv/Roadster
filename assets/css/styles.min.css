@@ -1,83 +1,29 @@
-.footer-basic {
-    padding: 40px 0;
-    background-color: #000;
-    color: #fff
-}
-
-.footer-basic ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: .825rem;
-    line-height: 1.6;
-    margin-bottom: 0
-}
-
-.footer-basic li {
-    padding: 0 10px
-}
-
-.footer-basic ul a {
-    color: inherit;
-    text-decoration: underline;
-    opacity: .8
-}
-
-.footer-basic ul a:hover {
-    opacity: 1
-}
-
-.footer-basic .social {
-    text-align: center;
-    padding-bottom: 25px
-}
-
-.footer-basic .social>a {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    margin: 0 8px;
-    color: inherit;
-    opacity: .75
-}
-
-.footer-basic .social>a:hover {
-    opacity: .9
-}
-
-.footer-basic .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0
-}
 
 body {
     color: #f0f2f5;
     background: #010101;
     font-family: Montserrat, sans-serif
 }
-
+ /* Home Section image  */
 #hero {
     width: 100%;
     height: 100vh;
-    background: url(../img/hero-mobile.jpg) center/cover no-repeat;
-    background-image: url();
+    background: url("../img/hero-mobile.jpg") center / cover no-repeat;
+   
 }
-
+ /* Mobile version image */
+@media (min-width: 768px) {
+    #hero {
+      background: url("../img/hero.jpg") center / cover no-repeat;
+    }
+  }
+  /* Tesla logo SVG  */
 .navbar-light .navbar-brand {
-    background: url(../img/logo.svg) center/85% no-repeat;
+    background: url("../img/logo.svg") center/85% no-repeat;
     width: 5.425rem
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #;
     color: rgba(0, 0, 0, .95)
 }
 
@@ -135,7 +81,10 @@ body {
     box-shadow: none;
     border-color: #fff
 }
+#hero-bottom .container {
+    max-width: 800px;
 
+}
 .container.flex-column {
     width: 48rem
 }
@@ -154,15 +103,7 @@ body {
     margin: 0
 }
 
-#video-table {
-    text-align: center
-}
-
-.video-top {
-    display: block
-}
-
-#video-top,
+.video-top,
 iframe {
     padding: 5rem 2rem;
     margin: 0 auto
@@ -222,10 +163,6 @@ th {
 }
 
 @media (min-width:768px) {
-    #hero {
-        background: url(../img/hero.jpg) center/cover no-repeat
-    }
-
     .table-row {
         width: 600px;
         margin: 0 auto;
@@ -237,7 +174,6 @@ th {
         font-size: 1rem
     }
 }
-
 #vertical-line {
     width: 1px;
     height: 195px;
@@ -247,4 +183,64 @@ th {
 
 #video-content-lastone {
     margin-top: 6rem
+}
+ /* Footer Section CSS Start */
+.footer-basic {
+    padding: 40px 0;
+    background-color: #000;
+    color: #fff
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: .825rem;
+    line-height: 1.6;
+    margin-bottom: 0
+}
+
+.footer-basic li {
+    padding: 0 10px
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: underline;
+    opacity: .8
+}
+
+.footer-basic ul a:hover {
+    opacity: 1
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: .75
+}
+
+.footer-basic .social > a:hover {
+    opacity: .9
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0
 }
